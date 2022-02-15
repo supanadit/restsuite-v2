@@ -66,7 +66,7 @@ class ParamsTable(editable: Boolean) : JScrollPane() {
         }
     }
 
-    fun getRequest(): ArrayList<RequestModel>? {
+    fun getRequest(): ArrayList<RequestModel> {
         val requestModels: ArrayList<RequestModel> = ArrayList<RequestModel>()
         for (i in 0 until defaultTableModel.rowCount) {
             val key = defaultTableModel.getValueAt(i, 0).toString()

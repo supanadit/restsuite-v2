@@ -22,6 +22,7 @@ dependencies {
     implementation("com.miglayout:miglayout-swing:11.0")
     implementation("com.google.dagger:dagger:2.40.5")
     implementation("io.reactivex.rxjava3:rxkotlin:3.0.1")
+    implementation("com.fifesoft:rsyntaxtextarea:3.1.6")
     implementation(compose.desktop.currentOs)
     kapt("com.google.dagger:dagger-compiler:2.40.5")
 }
