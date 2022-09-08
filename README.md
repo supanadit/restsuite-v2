@@ -25,13 +25,15 @@ the first version of Restsuite.
 - Socket IO Testing
 - Websocket Testing
 - SSE Testing
+- Open response in external editor ( This feature will become alternative solution before own code editor is available )
+- Open raw body in external editor ( This feature will also become an alternative solution before own code viewer is
+  ready )
 
 ## Coming Soon Feature
 
 - Custom Proxy
 - Environment Variable
 - Collection
-- Beautifier
 - CI / CD Integration
 - Intercept
 - GraphQL Support
@@ -43,6 +45,7 @@ the first version of Restsuite.
 - gRPC Testing
 - Generate documentation for swagger format
 - Own Code Editor & Code Viewer
+- Beautifier ( After Own Code Editor & Code Viewer )
 
 ## Run Application
 
