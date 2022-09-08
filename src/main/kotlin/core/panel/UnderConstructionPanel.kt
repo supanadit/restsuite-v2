@@ -4,7 +4,7 @@ import java.awt.GridBagLayout
 import javax.swing.JLabel
 import javax.swing.JPanel
 
-open class UnderConstructionPanel : JPanel() {
+class UnderConstructionPanel : JPanel() {
 
     init {
         layout = GridBagLayout()
