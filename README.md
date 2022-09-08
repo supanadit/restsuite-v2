@@ -38,9 +38,11 @@ the first version of Restsuite.
 - Message Broker Testing
     - Kafka
     - MQTT
+    - NATS
     - etc
 - gRPC Testing
 - Generate documentation for swagger format
+- Own Code Editor & Code Viewer
 
 ## Run Application
 
