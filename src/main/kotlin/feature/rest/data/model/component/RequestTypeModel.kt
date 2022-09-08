@@ -4,12 +4,12 @@ import feature.rest.domain.entities.RequestTypeEntity
 
 class RequestTypeModel(override var name: String) : RequestTypeEntity {
     companion object {
-        fun getType() = RequestTypeModel("GET")
+        fun typeGET() = RequestTypeModel("GET")
 
-        fun deleteType() = RequestTypeModel("DELETE")
+        fun typeDELETE() = RequestTypeModel("DELETE")
 
-        fun putType() = RequestTypeModel("PUT")
+        fun typePUT() = RequestTypeModel("PUT")
 
-        fun postType() = RequestTypeModel("POST")
+        fun typePOST() = RequestTypeModel("POST")
     }
 }

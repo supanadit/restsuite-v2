@@ -5,15 +5,15 @@ import feature.rest.presentation.renderer.RequestTypeRenderer
 import javax.swing.JComboBox
 
 class RequestTypeCombobox : JComboBox<RequestTypeModel>() {
-    var listTypeRequest: ArrayList<RequestTypeModel> = ArrayList()
+    private var listTypeRequest: ArrayList<RequestTypeModel> = ArrayList()
 
     init {
         setRenderer(RequestTypeRenderer())
 
-        listTypeRequest.add(RequestTypeModel.getType())
-        listTypeRequest.add(RequestTypeModel.postType())
-        listTypeRequest.add(RequestTypeModel.deleteType())
-        listTypeRequest.add(RequestTypeModel.putType())
+        listTypeRequest.add(RequestTypeModel.typeGET())
+        listTypeRequest.add(RequestTypeModel.typePOST())
+        listTypeRequest.add(RequestTypeModel.typeDELETE())
+        listTypeRequest.add(RequestTypeModel.typePUT())
 
         for (requestTypeModel in listTypeRequest) {
             addItem(requestTypeModel)
