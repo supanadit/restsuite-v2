@@ -23,6 +23,7 @@ dependencies {
     implementation("com.google.dagger:dagger:2.40.5")
     implementation("io.reactivex.rxjava3:rxkotlin:3.0.1")
     implementation("com.fifesoft:rsyntaxtextarea:3.1.6")
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
     implementation(compose.desktop.currentOs)
     kapt("com.google.dagger:dagger-compiler:2.40.5")
 }

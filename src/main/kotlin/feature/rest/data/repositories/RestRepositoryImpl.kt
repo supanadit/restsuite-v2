@@ -8,15 +8,13 @@ import javax.inject.Singleton
 
 @Singleton
 class RestRepositoryImpl @Inject constructor(
-    private val localSource: RestLocalDataSource,
-    private val remoteSource: RestRemoteDataSource
-) :
-    RestRepository {
-
+    private val localSource: RestLocalDataSource, private val remoteSource: RestRemoteDataSource
+) : RestRepository {
 
     override fun getData() {
         this.localSource.hello()
         this.remoteSource.hello()
+        this.remoteSource.getFromURL()
         println("Hello World")
     }
 }
