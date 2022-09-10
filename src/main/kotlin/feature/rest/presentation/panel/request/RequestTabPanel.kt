@@ -5,8 +5,8 @@ import javax.swing.JTabbedPane
 
 class RequestTabPanel : JTabbedPane() {
     init {
-        add("Query Params", ParamsPanel())
-        add("Header", UnderConstructionPanel())
+        //add("Query Params", ParamsPanel())
+        add("Header", HeadersPanel())
         add("Body", UnderConstructionPanel())
     }
 }

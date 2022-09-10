@@ -12,9 +12,7 @@ class RestRemoteDataSource @Inject constructor() {
         println("From Remote Data Source")
     }
 
-    fun getFromURL() {
-        val request = Request.Builder().url("https://publicobject.com/helloworld.txt").build()
-
+    fun getFromURL(request: Request) {
         client.newCall(request).execute().use { response ->
             if (!response.isSuccessful) throw IOException("Unexpected code $response")
 

@@ -20,7 +20,7 @@ class RestPanel @Inject constructor(restRepository: RestRepository) : JPanel(Mig
         add(requestTypeCombobox)
         add(sendButton, "wrap")
         sendButton.addActionListener {
-            restRepository.getData()
+
         }
         // Request Tab Panel
         add(RequestTabPanel(), "growx, pushx, span 3, wrap")

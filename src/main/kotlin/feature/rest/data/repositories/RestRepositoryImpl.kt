@@ -3,6 +3,7 @@ package feature.rest.data.repositories
 import feature.rest.data.datasources.RestLocalDataSource
 import feature.rest.data.datasources.RestRemoteDataSource
 import feature.rest.domain.repositories.RestRepository
+import okhttp3.Request
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -11,10 +12,10 @@ class RestRepositoryImpl @Inject constructor(
     private val localSource: RestLocalDataSource, private val remoteSource: RestRemoteDataSource
 ) : RestRepository {
 
-    override fun getData() {
+    override fun getData(request: Request) {
         this.localSource.hello()
         this.remoteSource.hello()
-        this.remoteSource.getFromURL()
+        //this.remoteSource.getFromURL()
         println("Hello World")
     }
 }
