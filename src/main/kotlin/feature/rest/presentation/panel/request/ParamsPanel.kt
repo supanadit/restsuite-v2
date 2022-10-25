@@ -6,6 +6,6 @@ import javax.swing.JPanel
 
 class ParamsPanel : JPanel(MigLayout()) {
     init {
-        add(ParamsTable(false), "growx,pushx")
+        add(ParamsTable(), "growx,pushx")
     }
 }
